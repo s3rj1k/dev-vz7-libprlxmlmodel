@@ -1,0 +1,15 @@
+Index: BUILD/Build/WarningAsError.pri
+===================================================================
+--- BUILD.orig/Build/WarningAsError.pri
++++ BUILD/Build/WarningAsError.pri
+@@ -7,8 +7,5 @@
+ # //////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+-QMAKE_CFLAGS += -Werror
+-macx:QMAKE_CFLAGS += -Wno-deprecated-declarations
+-QMAKE_CXXFLAGS += -Werror
+-macx:QMAKE_CXXFLAGS += -Wno-deprecated-declarations
+-
++QMAKE_CFLAGS += -Werror -Wno-deprecated-declarations -Wno-literal-suffix -Wno-error=misleading-indentation
++QMAKE_CXXFLAGS += -Werror -Wno-deprecated-declarations -Wno-literal-suffix -Wno-error=misleading-indentation

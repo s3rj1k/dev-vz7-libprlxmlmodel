@@ -1,0 +1,3 @@
+qmake_flags.patch
+makefile_name.patch
+sdk.patch

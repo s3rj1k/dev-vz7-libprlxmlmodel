@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	qmake-qt4
+
+override_dh_auto_install:
+	dh_auto_install
+
+	# libprlxmlmodel7
+	mkdir -p debian/libprlxmlmodel7/usr/lib/${DEB_HOST_MULTIARCH}
+	find debian/tmp/usr/lib64/ -type l -exec mv {} debian/libprlxmlmodel7/usr/lib/${DEB_HOST_MULTIARCH} \;
+	install -m 644 -p debian/tmp/usr/lib64/libprl_xml_model.so.7.0.* debian/libprlxmlmodel7/usr/lib/${DEB_HOST_MULTIARCH}

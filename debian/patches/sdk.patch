@@ -1,0 +1,13 @@
+Index: BUILD/Build/Parallels.pri
+===================================================================
+--- BUILD.orig/Build/Parallels.pri
++++ BUILD/Build/Parallels.pri
+@@ -274,7 +274,7 @@ unix {
+ 	QMAKE_CXXFLAGS += -frandom-seed=parallels
+ }
+ 
+-INCLUDEPATH += . $$SRC_LEVEL
++INCLUDEPATH += . $$SRC_LEVEL $$SRC_LEVEL/SDK/Sources
+ DEPENDPATH += . $$SRC_LEVEL
+ 
+ clear(_linkable)

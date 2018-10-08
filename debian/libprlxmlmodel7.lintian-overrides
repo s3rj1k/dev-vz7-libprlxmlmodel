@@ -1,0 +1,6 @@
+# ignore changelog bug, not debian upstream package
+libprlxmlmodel7: new-package-should-close-itp-bug
+# using openssl
+libprlxmlmodel7: possible-gpl-code-linked-with-openssl
+# ignoring, make package names uniform
+libprlxmlmodel7: package-name-doesnt-match-sonames libprl-xml-model7

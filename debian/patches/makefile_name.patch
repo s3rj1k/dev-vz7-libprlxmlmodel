@@ -1,0 +1,13 @@
+Index: BUILD/Build/Parallels.pri
+===================================================================
+--- BUILD.orig/Build/Parallels.pri
++++ BUILD/Build/Parallels.pri
+@@ -66,7 +66,7 @@ x86only {
+ }
+ 
+ x86_64 {
+-	MAKEFILE = Makefile64
++	MAKEFILE = Makefile
+ }
+ 
+ # These macro are the only way of the platform definition

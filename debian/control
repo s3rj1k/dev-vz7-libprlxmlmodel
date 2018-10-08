@@ -1,0 +1,30 @@
+Source: libprlxmlmodel
+Section: libs
+Priority: optional
+Maintainer: s3rj1k <evasive.gyron@gmail.com>
+Build-Depends: debhelper (>= 9), libqt4-dev, libboost-all-dev, pkg-config
+Standards-Version: 3.9.6
+
+Package: libprlxmlmodel-dev
+Section: libdevel
+Architecture: amd64
+Depends: libprlcommon7 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: prlxmlmodel API development library
+ Virtuozzo Xml Model Library contains a common for Virtuozzo
+ prl* projects object model - classes and their
+ Xml representations.
+ .
+ This package contains headers of XML Model API library
+ for Virtuozzo components.
+
+Package: libprlxmlmodel7
+Architecture: amd64
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: prlxmlmodel API library
+ Virtuozzo Xml Model Library contains a common for Virtuozzo prl* projects
+ object model - classes and their Xml representations.
+ .
+ This package contains the XML Model API library
+ for Virtuozzo components.
