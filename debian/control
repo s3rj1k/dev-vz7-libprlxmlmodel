@@ -8,7 +8,7 @@ Standards-Version: 3.9.6
 Package: libprlxmlmodel-dev
 Section: libdevel
 Architecture: amd64
-Depends: libprlcommon7 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: libprlxmlmodel7 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: prlxmlmodel API development library
  Virtuozzo Xml Model Library contains a common for Virtuozzo
  prl* projects object model - classes and their
