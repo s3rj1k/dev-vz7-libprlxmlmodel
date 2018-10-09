@@ -15,4 +15,4 @@ function fetch() {
 # libprlxmlmodel
 fetch "libprlxmlmodel" "7.0.73"
 # libprlsdk
-fetch "libprlsdk" "7.0.217.2"
+fetch "libprlsdk" "7.0.220"
